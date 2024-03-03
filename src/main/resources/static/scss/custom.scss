@@ -1,0 +1,37 @@
+// 1. Import functions and any default variable overrides
+@import "../bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+$primary: #a27d16;
+$secondary: #c9252c;
+$nav-tabs-link-active-color: #ffffff;
+$nav-tabs-link-active-bg: $secondary;
+$nav-link-color: #555555;
+
+$nav-tabs-border-radius: 1rem;
+
+// 3. Import the core Bootstrap variables and color mode variables
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+$custom-colors: (
+    "pink-red": #c9252c,
+    "gold": #d9b451,
+    "dark-gold": #a27d16,
+    "super-light-gold": #f7f0dc,
+    "dark-gray": #555555
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// 5. Import remaining required Bootstrap stylesheets
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/transitions";
+@import "../bootstrap/scss/modal";
+
+@import "../bootstrap/scss/bootstrap";
+
+// 6. Add additional custom code here
